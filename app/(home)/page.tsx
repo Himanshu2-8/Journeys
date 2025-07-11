@@ -19,9 +19,6 @@ export default function Home() {
           <p className="text-lg text-blue-900/80 mb-8 max-w-xl">
             Turn your travel dreams into a plan — and your plan into a memory.
           </p>
-          <Link href="/trips/new" className="mt-2 px-8 py-4 bg-gradient-to-r from-sky-500 to-blue-600 text-white rounded-2xl shadow-lg hover:scale-105 hover:bg-blue-700 transition-all font-bold text-lg inline-block">
-            Create Your Journey
-          </Link>
         </div>
         <div className="absolute right-0 bottom-0 z-0 hidden md:block">
           <svg
