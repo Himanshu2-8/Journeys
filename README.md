@@ -2,6 +2,9 @@
 
 **Journeys** is a full-stack web application designed to help users plan and visualize their travel itineraries. With an intuitive interface, users can create detailed trip plans, add multiple destinations, and view their entire journey on an interactive map. The application is built with Next.js and leverages a robust stack of modern technologies to deliver a seamless and engaging user experience.
 
+# Demo Link
+**Youtube - **https://youtu.be/olwJrvfQv7M
+
 ## Key Features
 
 - **User Authentication**: Secure user registration and login functionality provided by Clerk, ensuring that each user's travel plans are private and accessible only to them.
