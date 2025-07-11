@@ -20,8 +20,3 @@
 - **File Uploads**: UploadThing
 - **Mapping**: Google Maps API
 - **Styling**: Tailwind CSS with custom UI components
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-

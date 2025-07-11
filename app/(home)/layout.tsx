@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import prisma from "@/lib/prisma";
 import { currentUser } from "@clerk/nextjs/server"
+import { redirect } from "next/navigation";
 
 const layout = async ({ children }: { children: React.ReactNode }) => {
   const user = await currentUser();
@@ -22,6 +23,7 @@ const layout = async ({ children }: { children: React.ReactNode }) => {
         }
       })
     }
+    redirect("/trips")
   }
 
   return (
