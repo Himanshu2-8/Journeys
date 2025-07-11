@@ -1,6 +1,7 @@
 import TripDetail from "@/components/TripDetail";
 import prisma from "@/lib/prisma";
 import { currentUser } from "@clerk/nextjs/server";
+import { Navbar } from "@/components/Navbar";
 
 export default async function TripPage({params}:{params:Promise<{id:string}>}) {
     const user=await currentUser();
@@ -26,6 +27,7 @@ export default async function TripPage({params}:{params:Promise<{id:string}>}) {
         <div>Trip not found</div>
     }
     return <div>
+        <Navbar user={user} />
         {trip && <TripDetail trip={trip}/>}
     </div>
 }

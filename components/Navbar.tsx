@@ -23,7 +23,7 @@ export const Navbar = ({ user }: { user: User | null }) => {
     <nav className="bg-white/80 backdrop-blur-sm shadow-md py-3 border-b border-gray-100 sticky top-0 z-50 transition-all duration-300 hover:shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-4 lg:px-8">
         <Link href={"/"} className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-200 flex-shrink-0">
-          <Image src={"/logo.png"} alt="logo" width={50} height={50} className="rounded-full shadow-sm" />
+          <Image src={"/image.png"} alt="logo" width={50} height={50} className="rounded-full shadow-sm" />
           <span className="text-xl font-bold tracking-tight hidden sm:inline bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-blue-600 animate-gradient bg-300% bg-animate-gradient hover:from-pink-500 hover:to-purple-600 transition-all duration-500">
             Journeys
           </span>
