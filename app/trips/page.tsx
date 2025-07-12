@@ -3,7 +3,7 @@ import Link from "next/link";
 import { currentUser } from "@clerk/nextjs/server";
 import { Card, CardTitle, CardHeader, CardContent } from "@/components/ui/card";
 import prisma from "@/lib/prisma";
-import { User } from "@clerk/nextjs/server";
+
 import { Navbar } from "@/components/Navbar";
 
 export default async function TripsPage() {
@@ -25,8 +25,8 @@ export default async function TripsPage() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const upcomingTrips = sortedTrips.filter((trip) => {
-    new Date(trip.startDate) >= today
+  const upcomingTrips = sortedTrips.filter(() => {
+    
   })
 
   return (

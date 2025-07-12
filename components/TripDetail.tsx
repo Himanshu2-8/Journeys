@@ -2,8 +2,8 @@
 
 import { Trip, Location } from "@/app/generated/prisma"
 import Image from "next/image"
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
-import { Calendar, Plus, MapPin, Clock, CalendarDays, Home, Map, List, PlusCircle, HomeIcon } from "lucide-react"
+import { Card, CardContent, CardHeader } from "./ui/card"
+import { Calendar, MapPin, Clock, CalendarDays, Map, List, PlusCircle, HomeIcon } from "lucide-react"
 import Link from "next/link"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs"
 import { useState } from "react"
