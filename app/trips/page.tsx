@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { currentUser } from "@clerk/nextjs/server";
-import { Card, CardTitle, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image";
 import prisma from "@/lib/prisma";
 
 import { Navbar } from "@/components/Navbar";
@@ -74,11 +75,14 @@ export default async function TripsPage() {
                     <Card className="h-full transition-all duration-300 hover:shadow-2xl hover:border-sky-200 border-0 bg-white/90 backdrop-blur-md overflow-hidden">
                       <div className="h-40 bg-sky-100 flex items-center justify-center">
                         {trip.imageUrl ? (
-                          <img
-                            src={trip.imageUrl}
-                            alt={trip.title}
-                            className="w-full h-full object-cover"
-                          />
+                          <div className="relative w-full h-full">
+                            <Image
+                              src={trip.imageUrl}
+                              alt={trip.title}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
                         ) : (
                           <div className="text-sky-400">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
